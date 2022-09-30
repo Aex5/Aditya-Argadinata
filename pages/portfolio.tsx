@@ -92,6 +92,38 @@ export default function portfolio() {
                   </div>
                 </div>
               </a>
+
+              {/* weeblog */}
+              <a
+                href="https://weeblog.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:-translate-y-1 duration-200"
+              >
+                <div className="mt-4 border-2 border-[#0c8c96] p-4 md:w-[400px] md:h-[200px] md:relative">
+                  <h2 className="text-lg font-semibold">Weeblog</h2>
+                  <p className="pt-2">
+                    Blog starter with Next.js and Prisma, with a clean design.
+                  </p>
+                  <div className="flex items-center mt-2 gap-2 md:absolute md:bottom-4">
+                    <Image src="/react.png" alt="" width="20px" height="20px" />
+                    <Image
+                      src="/tailwind.png"
+                      alt=""
+                      width="20px"
+                      height="20px"
+                    />
+                    <Image src="/vite.png" alt="" width="20px" height="20px" />
+                    <Image
+                      src="/prisma.png"
+                      alt=""
+                      width="35px"
+                      height="35px"
+                      className="-translate-x-2"
+                    />
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
