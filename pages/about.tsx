@@ -54,9 +54,8 @@ export default function about() {
                     <Image src="/ts.png" alt="" width="32px" height="32px" />
                   </div>
                   <p>
-                    I learning javascript from December 2021 and i think
-                    Typescript is very cool and worth to learn and i decide to
-                    learn Typescript too
+                    I Love syntax and other stuff in Javascript, and now i
+                    currios about Typescript and I currently learning Typescript
                   </p>
                 </div>
 
@@ -84,8 +83,8 @@ export default function about() {
                     <Image src="/mongo.png" alt="" width="32px" height="32px" />
                   </div>
                   <p>
-                    i havent used any backend environment yet, but i will start
-                    to learn it.
+                    i am trying to learn backend environment, and i am very
+                    intersted.
                   </p>
                 </div>
               </div>

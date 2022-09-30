@@ -39,8 +39,8 @@ const Home: NextPage = () => {
                 </p>
                 <p className="mt-4">
                   hello, I am Aditya Argadinata, A person who love to code and
-                  music. Talks about React, <br /> Tailwind css, an another web
-                  development related topic{" "}
+                  music. very intersted in web development, And now i am
+                  learning a fullstack of Javascript environtment{" "}
                 </p>
               </div>
             </div>
@@ -49,9 +49,9 @@ const Home: NextPage = () => {
             <div className="mt-28">
               <p className="text-3xl font-bold">Featured Portfolio</p>
               <div className="w-full mt-4 border-2 border-[#0c8c96] p-4">
-                <h4 className="text-lg font-semibold">Poke-Dex</h4>
+                <h4 className="text-lg font-semibold">Weeblog</h4>
                 <p className="pt-2">
-                  A simple pokemon index App build with Vite, React, TailwindCss
+                  Blog starter with Next.js and Prisma, with a clean design.
                 </p>
                 <div className="flex items-center mt-2 gap-2">
                   <Image src="/react.png" alt="" width="20px" height="20px" />
@@ -62,13 +62,18 @@ const Home: NextPage = () => {
                     height="20px"
                   />
                   <Image src="/vite.png" alt="" width="20px" height="20px" />
+                  <Image
+                    src="/prisma.png"
+                    alt=""
+                    width="35px"
+                    height="35px"
+                    className="-translate-x-2"
+                  />
                 </div>
               </div>
               <div className="w-full mt-4 border-2 border-[#0c8c96] p-4">
-                <h4 className="text-lg font-semibold">ChiChat</h4>
-                <p className="pt-2">
-                  A simple RealTime chat App build with Vite, React, TailwindCss
-                </p>
+                <h4 className="text-lg font-semibold">Bugnime</h4>
+                <p className="pt-2">The anime web downloader without ads</p>
                 <div className="flex items-center mt-2 gap-2">
                   <Image src="/react.png" alt="" width="20px" height="20px" />
                   <Image
@@ -80,7 +85,7 @@ const Home: NextPage = () => {
                   <Image src="/vite.png" alt="" width="20px" height="20px" />
                 </div>
               </div>
-              <Link href="/">
+              <Link href="/portfolio">
                 <a className="flex items-center gap-2 mt-2">
                   <span>All Portofolios </span> <HiArrowNarrowRight />
                 </a>
