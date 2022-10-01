@@ -9,15 +9,15 @@ export default function Footer() {
           {/* navigation footer */}
           <div className="w-full">
             <ul className="flex flex-col gap-3 text-md">
-              <Link href="">
+              <Link href="/">
                 <a>Home</a>
               </Link>
 
-              <Link href="">
+              <Link href="/about">
                 <a>About</a>
               </Link>
 
-              <Link href="">
+              <Link href="/portfolio">
                 <a>Porfolio</a>
               </Link>
             </ul>
@@ -26,16 +26,40 @@ export default function Footer() {
           <div className="w-full">
             <ul className="flex flex-col gap-3 text-md">
               <li>
-                <a href="">Github</a>
+                <a
+                  href="https://github.com/Sujaruu"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
               </li>
               <li>
-                <a href="">Instagram</a>
+                <a
+                  href="https://www.instagram.com/aditya_arga1/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
+                </a>
               </li>
               <li>
-                <a href="">Facebook</a>
+                <a
+                  href="https://www.facebook.com/adityaargadinata12"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Facebook
+                </a>
               </li>
               <li>
-                <a href="">Discord</a>
+                <a
+                  href="https://discord.com/channels/@me/902026180033654794"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Discord
+                </a>
               </li>
             </ul>
           </div>

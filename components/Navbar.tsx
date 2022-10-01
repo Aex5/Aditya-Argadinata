@@ -14,6 +14,10 @@ export default function Navbar() {
               <a>Porfolio</a>
             </Link>
 
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
+
             <Link href="/about">
               <a>About</a>
             </Link>
