@@ -1,8 +1,10 @@
 import { useState } from "react";
+import Image from "next/image";
 import Layout from "../components/Layout";
 import { motion } from "framer-motion";
 
 import { PrismaClient } from "@prisma/client";
+import { getImageSize } from "next/dist/server/image-optimizer";
 const prisma = new PrismaClient();
 
 // fetch data
@@ -29,7 +31,24 @@ export default function blog({ posts }: any) {
       >
         <div className="w-full bg-[#fbfcfd] pt-20">
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8">
-            <h1>Blog</h1>
+            <div className="">
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/megu.jpg"
+                  alt=""
+                  width="150px"
+                  height="150px"
+                  className="object-cover md:h-[150px] md:w-[150px] rounded-full"
+                />
+                <div>
+                  <h1 className="text-3xl font-bold">Blog</h1>
+                  <p>
+                    I will share about web development, design and other relate
+                    topics
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className="mt-10 md:flex flex-wrap justify-between items-center gap-2">
               {posts.map((post: any) => (
                 <a className="hover:-translate-y-1 duration-200" key={post.id}>
