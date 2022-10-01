@@ -32,14 +32,17 @@ export default function blog({ posts }: any) {
         <div className="w-full bg-[#fbfcfd] pt-20">
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8">
             <div className="">
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/megu.jpg"
-                  alt=""
-                  width="150px"
-                  height="150px"
-                  className="object-cover md:h-[150px] md:w-[150px] rounded-full"
-                />
+              <div className="flex items-center justify-center gap-10">
+                <div className="flex flex-col">
+                  <Image
+                    src="/megu.jpg"
+                    alt=""
+                    width="150px"
+                    height="150px"
+                    className="object-cover md:h-[150px] md:w-[150px] rounded-full"
+                  />
+                  <button> github</button>
+                </div>
                 <div>
                   <h1 className="text-3xl font-bold">Blog</h1>
                   <p>
