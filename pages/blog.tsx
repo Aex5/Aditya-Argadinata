@@ -2,9 +2,9 @@ import { useState } from "react";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
 import { PrismaClient } from "@prisma/client";
-import { getImageSize } from "next/dist/server/image-optimizer";
 const prisma = new PrismaClient();
 
 // fetch data
@@ -33,7 +33,7 @@ export default function blog({ posts }: any) {
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8">
             <div className="">
               <div className="flex items-center justify-center gap-10">
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-2">
                   <Image
                     src="/megu.jpg"
                     alt=""
@@ -41,7 +41,10 @@ export default function blog({ posts }: any) {
                     height="150px"
                     className="object-cover md:h-[150px] md:w-[150px] rounded-full"
                   />
-                  <button> github</button>
+                  <button className="flex items-center gap-2 mx-auto py-1 px-5 rounded-md backdrop-blur-xl shadow-md">
+                    <FaGithub />
+                    <span>Github</span>
+                  </button>
                 </div>
                 <div>
                   <h1 className="text-3xl font-bold">Blog</h1>
@@ -55,7 +58,7 @@ export default function blog({ posts }: any) {
             <div className="mt-10 md:flex flex-wrap justify-between items-center gap-2">
               {posts.map((post: any) => (
                 <a className="hover:-translate-y-1 duration-200" key={post.id}>
-                  <div className="mt-4 border-2 border-[#0c8c96] p-4 md:w-[400px] md:h-[200px] md:relative">
+                  <div className="mt-4 shadow-lg border-t-2 p-4 rounded-xl md:w-[400px] md:h-[200px] md:relative">
                     <h2 className="text-lg font-semibold">{post.title}</h2>
                     <div
                       dangerouslySetInnerHTML={{
