@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    backgroundImage: {
+      "glare-ef": "url('../public/glare.png')",
+    },
   },
   plugins: [],
 };
