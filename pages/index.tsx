@@ -21,7 +21,9 @@ const Home: NextPage = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="w-full bg-[#fbfcfd] backdrop-blur-sm pt-20">
+          {/* glare effect feels need to clean */}
           <div className="w-[50rem] h-[30rem] bg-glare-ef bg-no-repeat absolute top-0 right-0 -z-10"></div>
+
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8">
             <div className="flex flex-col items-center md:flex-row-reverse md:justify-between">
               <div className="w-[200px]">
