@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 

@@ -48,46 +48,60 @@ const Home: NextPage = () => {
               </div>
             </div>
 
-            {/* featured article */}
+            {/* featured prtfolio*/}
             <div className="mt-28">
-              <p className="text-3xl font-bold">Featured Portfolio</p>
-              <div className="w-full mt-4 border-2 border-[#0c8c96] p-4">
-                <h4 className="text-lg font-semibold">Weeblog</h4>
-                <p className="pt-2">
-                  Blog starter with Next.js and Prisma, with a clean design.
-                </p>
-                <div className="flex items-center mt-2 gap-2">
-                  <Image src="/react.png" alt="" width="20px" height="20px" />
-                  <Image
-                    src="/tailwind.png"
-                    alt=""
-                    width="20px"
-                    height="20px"
-                  />
-                  <Image src="/vite.png" alt="" width="20px" height="20px" />
-                  <Image
-                    src="/prisma.png"
-                    alt=""
-                    width="35px"
-                    height="35px"
-                    className="-translate-x-2"
-                  />
+              <h3 className="text-3xl font-bold">Featured Portfolio</h3>
+              <a
+                href="https://weeblog.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="w-full mt-4 border-2 border-[#0c8c96] p-4">
+                  <h4 className="text-lg font-semibold">Weeblog</h4>
+                  <p className="pt-2">
+                    Blog starter with Next.js and Prisma, with a clean design.
+                  </p>
+                  <div className="flex items-center mt-2 gap-2">
+                    <Image src="/react.png" alt="" width="20px" height="20px" />
+                    <Image
+                      src="/tailwind.png"
+                      alt=""
+                      width="20px"
+                      height="20px"
+                    />
+                    <Image src="/vite.png" alt="" width="20px" height="20px" />
+                    <Image
+                      src="/prisma.png"
+                      alt=""
+                      width="35px"
+                      height="35px"
+                      className="-translate-x-2"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="w-full mt-4 border-2 border-[#0c8c96] p-4">
-                <h4 className="text-lg font-semibold">Bugnime</h4>
-                <p className="pt-2">The anime web downloader without ads</p>
-                <div className="flex items-center mt-2 gap-2">
-                  <Image src="/react.png" alt="" width="20px" height="20px" />
-                  <Image
-                    src="/tailwind.png"
-                    alt=""
-                    width="20px"
-                    height="20px"
-                  />
-                  <Image src="/vite.png" alt="" width="20px" height="20px" />
+              </a>
+
+              <a
+                href="https://bugnime.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="w-full mt-4 border-2 border-[#0c8c96] p-4">
+                  <h4 className="text-lg font-semibold">Bugnime</h4>
+                  <p className="pt-2">The anime web downloader without ads</p>
+                  <div className="flex items-center mt-2 gap-2">
+                    <Image src="/react.png" alt="" width="20px" height="20px" />
+                    <Image
+                      src="/tailwind.png"
+                      alt=""
+                      width="20px"
+                      height="20px"
+                    />
+                    <Image src="/vite.png" alt="" width="20px" height="20px" />
+                  </div>
                 </div>
-              </div>
+              </a>
+
               <Link href="/portfolio">
                 <a className="flex items-center gap-2 mt-2">
                   <span>All Portofolios </span> <HiArrowNarrowRight />
