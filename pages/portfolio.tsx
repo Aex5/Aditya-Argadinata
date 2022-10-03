@@ -11,10 +11,10 @@ export default function portfolio() {
         transition={{ duration: 0.5 }}
       >
         <div className="w-full bg-[#fbfcfd] backdrop-blur-sm pt-20">
-          {/* glare effect feels need to clean */}
-          <div className="w-[50rem] h-[30rem] bg-glare-ef bg-no-repeat absolute top-0 right-0 -z-10"></div>
+          <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
+            {/* glare effect feels need to clean */}
+            <div className="w-[70rem] h-[30rem] bg-glare-ef  bg-no-repeat absolute -top-20 -right-30 bg-contain -z-10"></div>
 
-          <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8">
             <div>
               <h1 className="text-3xl font-bold mt-8">Portfolio</h1>
               <p className="pt-2">

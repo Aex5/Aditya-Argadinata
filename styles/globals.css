@@ -6,10 +6,5 @@
 .glare{
     background-image: url('../public/glare.png');
     background-repeat: no-repeat;
-    width: 50rem;
-    height: 20rem;
-    position: absolute;
-    top: 0;
-    right: 0;
     z-index: -1;
 }
