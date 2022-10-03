@@ -1,4 +1,4 @@
-import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Layout from "../../components/Layout";
 import { motion } from "framer-motion";
@@ -60,7 +60,10 @@ export default function blog({ posts }: any) {
             </div>
             <div className="mt-10 md:flex flex-wrap justify-between items-center gap-2">
               {posts.map((post: any) => (
-                <a className="hover:-translate-y-1 duration-200" key={post.id}>
+                <div
+                  className="hover:-translate-y-1 duration-200"
+                  key={post.id}
+                >
                   <div className="mt-4 shadow-lg border-t-2 p-4 rounded-xl md:w-[400px] md:h-[200px] md:relative">
                     <h2 className="text-lg font-semibold">{post.title}</h2>
                     <div
@@ -69,8 +72,11 @@ export default function blog({ posts }: any) {
                       }}
                       className="text-gray-400 text-sm"
                     ></div>
+                    <Link href={`/blog/detail/${post.endpoint}`}>
+                      <a>detail</a>
+                    </Link>
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </div>
