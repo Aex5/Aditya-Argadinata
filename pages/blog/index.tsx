@@ -32,7 +32,7 @@ export default function blog({ posts }: any) {
         <div className="w-full bg-[#fbfcfd] backdrop-blur-sm pt-20 ">
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
             {/* glare effect feels need to clean */}
-            <div className="w-[70rem] h-[30rem] bg-glare-ef  bg-no-repeat absolute -top-20 -right-30 bg-contain -z-10"></div>
+            <div className="w-full h-[20rem] bg-glare-ef bg-no-repeat absolute -top-20 -right-30 bg-contain -z-10"></div>
 
             <div className="">
               <div className="flex items-center justify-center gap-10">
