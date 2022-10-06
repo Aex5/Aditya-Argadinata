@@ -1,5 +1,5 @@
-import { GetServerSideProps } from "next";
 import { NextRequest, NextResponse } from "next/server";
+import Layout from "../../../components/Layout";
 
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
@@ -20,15 +20,24 @@ export async function getServerSideProps(req: any) {
 
 export default function detail({ detail }: any) {
   return (
-    <div>
-      {detail.map((blog: any) => {
-        return (
-          <div key={blog.id}>
-            <h1>{blog.title}</h1>
-            <p>{blog.content}</p>
-          </div>
-        );
-      })}
-    </div>
+    <Layout>
+      <div className="w-full bg-[#fbfcfd] backdrop-blur-sm pt-20">
+        <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
+          {detail.map((blog: any) => {
+            return (
+              <div key={blog.id}>
+                <h1>{blog.title}</h1>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: blog.content,
+                  }}
+                  className="text-gray-400 text-sm"
+                ></div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </Layout>
   );
 }
