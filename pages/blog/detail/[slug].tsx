@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import Image from "next/image";
 import Layout from "../../../components/Layout";
 
 import { PrismaClient } from "@prisma/client";
@@ -26,13 +27,27 @@ export default function detail({ detail }: any) {
           {detail.map((blog: any) => {
             return (
               <div key={blog.id}>
-                <h1>{blog.title}</h1>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: blog.content,
-                  }}
-                  className="text-gray-400 text-sm"
-                ></div>
+                <div className="w-full">
+                  <Image
+                    src={blog.thumbnail}
+                    alt={blog.title}
+                    width="900px"
+                    height="600px"
+                    className="object-contain md:h-[600px] md:w-[900px] rounded-md"
+                  />
+                </div>
+
+                <div className="text-center">
+                  <h1 className="capitalize text-lg font-semibold">
+                    {blog.title}
+                  </h1>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: blog.content,
+                    }}
+                    className="text-gray-400 text-sm"
+                  ></div>
+                </div>
               </div>
             );
           })}
