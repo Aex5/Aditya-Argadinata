@@ -32,7 +32,7 @@ export default function blog({ posts }: any) {
         <div className="w-full bg-[#fbfcfd] backdrop-blur-sm pt-20 ">
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
             {/* glare effect feels need to clean */}
-            <div className="w-full h-[20rem] bg-glare-ef bg-no-repeat absolute -top-20 -right-30 bg-contain -z-10"></div>
+            <div className="w-full h-[20rem] bg-glare-ef bg-no-repeat absolute -top-10 -right-30 bg-contain -z-10"></div>
 
             <div className="">
               <div className="flex items-center justify-center gap-10">
@@ -60,23 +60,25 @@ export default function blog({ posts }: any) {
             </div>
             <div className="mt-10 md:flex flex-wrap justify-between items-center gap-2">
               {posts.map((post: any) => (
-                <div
-                  className="hover:-translate-y-1 duration-200"
+                <Link
                   key={post.id}
+                  href={`/blog/detail/${post.endpoint}`}
+                  className="cursor-pointer"
                 >
-                  <div className="mt-4 shadow-lg border-t-2 p-4 rounded-xl md:w-[400px] md:h-[200px] md:relative">
-                    <h2 className="text-lg font-semibold">{post.title}</h2>
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: limit(post.content),
-                      }}
-                      className="text-gray-400 text-sm"
-                    ></div>
-                    <Link href={`/blog/detail/${post.endpoint}`}>
-                      <a>detail</a>
-                    </Link>
-                  </div>
-                </div>
+                  <a>
+                    <div className="hover:-translate-y-1 duration-200">
+                      <div className="mt-4 shadow-lg border-t-2 p-4 rounded-xl md:w-[400px] md:h-[200px] md:relative">
+                        <h2 className="text-lg font-semibold">{post.title}</h2>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: limit(post.content),
+                          }}
+                          className="text-gray-400 text-sm"
+                        ></div>
+                      </div>
+                    </div>
+                  </a>
+                </Link>
               ))}
             </div>
           </div>
