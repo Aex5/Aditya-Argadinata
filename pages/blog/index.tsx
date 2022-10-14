@@ -65,7 +65,9 @@ export default function blog({ posts }: any) {
                   <a>
                     <div className="hover:-translate-y-1 duration-200">
                       <div className="mt-4 shadow-lg border-t-2 p-4 rounded-xl md:w-[400px] md:h-[200px] md:relative">
-                        <h2 className="text-lg font-semibold">{post.title}</h2>
+                        <h2 className="text-lg font-semibold capitalize">
+                          {post.title}
+                        </h2>
                         <div
                           dangerouslySetInnerHTML={{
                             __html: limit(post.content),
