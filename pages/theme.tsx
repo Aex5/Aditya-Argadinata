@@ -3,32 +3,17 @@ import Head from "next/head";
 
 import { useTheme } from "next-themes";
 
-const ThemeProvider: NextPage = () => {
+const Theme: NextPage = () => {
   const { theme, setTheme } = useTheme();
 
   // toggle responsible for changing the theme
   const renderThemeToggle = () => {
-    const currentTheme = theme;
-    if (currentTheme === "dark") {
-      return (
-        <button
-          className="border rounded-sm p-2"
-          onClick={() => setTheme("light")}
-          type="button"
-        >
-          {" "}
-          dark{" "}
-        </button>
-      );
-    }
     return (
       <button
-        className="border rounded-sm p-2"
-        onClick={() => setTheme("dark")}
-        type="button"
+        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+        className="px-4 py-2 rounded-md bg-[#fbfcfd] backdrop-blur-sm shadow-md dark:text-black"
       >
-        {" "}
-        Light{" "}
+        on
       </button>
     );
   };
@@ -56,4 +41,4 @@ const ThemeProvider: NextPage = () => {
   );
 };
 
-export default ThemeProvider;
+export default Theme;
