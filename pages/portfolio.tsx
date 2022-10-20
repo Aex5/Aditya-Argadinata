@@ -10,7 +10,7 @@ export default function portfolio() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-full bg-[#fbfcfd] backdrop-blur-sm pt-20">
+        <div className="w-full bg-[#fbfcfd] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8">
             <div>
               <h1 className="text-3xl font-bold mt-8">Portfolio</h1>

@@ -22,7 +22,7 @@ export async function getServerSideProps(req: any) {
 export default function detail({ detail }: any) {
   return (
     <Layout>
-      <div className="w-full bg-[#fbfcfd] backdrop-blur-sm pt-20">
+      <div className="w-full bg-[#fbfcfd] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
         <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
           {detail.map((blog: any) => {
             return (
