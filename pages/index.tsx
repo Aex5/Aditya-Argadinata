@@ -34,7 +34,7 @@ const Home: NextPage = () => {
               </div>
               <div className="w-full">
                 <h1 className="text-4xl font-bold mt-8">Aditya Argadinata</h1>
-                <p className="text-xl font-bold mt-4 text-cyan-600">
+                <p className="text-xl font-bold mt-4 text-cyan-700">
                   Student & Frontend Developer
                 </p>
                 <p className="mt-4">
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="w-full mt-4 border-2 border-[#0c8c96] p-4">
+                <div className="w-full mt-4 border-2 border-cyan-700 p-4">
                   <h4 className="text-lg font-semibold">Weeblog</h4>
                   <p className="pt-2">
                     Blog starter with Next.js and Prisma, with a clean design.
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="w-full mt-4 border-2 border-[#0c8c96] p-4">
+                <div className="w-full mt-4 border-2 border-cyan-700 p-4">
                   <h4 className="text-lg font-semibold">Bugnime</h4>
                   <p className="pt-2">The anime web downloader without ads</p>
                   <div className="flex items-center mt-2 gap-2">

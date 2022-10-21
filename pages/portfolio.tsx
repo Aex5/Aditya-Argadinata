@@ -27,7 +27,7 @@ export default function portfolio() {
                 rel="noreferrer"
                 className="hover:-translate-y-1 duration-200"
               >
-                <div className="mt-4 border-2 border-[#0c8c96] p-4 md:w-[350px] md:h-[200px] md:relative">
+                <div className="mt-4 border-2 border-cyan-700 p-4 md:w-[350px] md:h-[200px] md:relative">
                   <h2 className="text-lg font-semibold">Bugnime</h2>
                   <p className="pt-2">The anime web downloader without ads </p>
                   <div className="flex items-center mt-2 gap-2 md:absolute md:bottom-4">
@@ -50,7 +50,7 @@ export default function portfolio() {
                 rel="noreferrer"
                 className="hover:-translate-y-1 duration-200"
               >
-                <div className="mt-4 border-2 border-[#0c8c96] p-4 md:w-[350px] md:h-[200px] md:relative">
+                <div className="mt-4 border-2 border-cyan-700 p-4 md:w-[350px] md:h-[200px] md:relative">
                   <h2 className="text-lg font-semibold">Studyku</h2>
                   <p className="pt-2">
                     The Web course landing page with animation scroll
@@ -75,7 +75,7 @@ export default function portfolio() {
                 rel="noreferrer"
                 className="hover:-translate-y-1 duration-200"
               >
-                <div className="mt-4 border-2 border-[#0c8c96] p-4 md:w-[350px] md:h-[200px] md:relative">
+                <div className="mt-4 border-2 border-cyan-700 p-4 md:w-[350px] md:h-[200px] md:relative">
                   <h2 className="text-lg font-semibold">Clean Portfolio</h2>
                   <p className="pt-2">
                     The simplel portfolio with a clean design
@@ -100,7 +100,7 @@ export default function portfolio() {
                 rel="noreferrer"
                 className="hover:-translate-y-1 duration-200"
               >
-                <div className="mt-4 border-2 border-[#0c8c96] p-4 md:w-[350px] md:h-[200px] md:relative">
+                <div className="mt-4 border-2 border-cyan-700 p-4 md:w-[350px] md:h-[200px] md:relative">
                   <h2 className="text-lg font-semibold">Weeblog</h2>
                   <p className="pt-2">
                     Blog starter with Next.js and Prisma, with a clean design.
