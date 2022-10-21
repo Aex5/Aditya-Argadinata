@@ -29,7 +29,7 @@ export default function blog({ posts }: any) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-full bg-[#fbfcfd] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
+        <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
             <div className="">
               <div className="flex items-center justify-center gap-10">
@@ -64,7 +64,7 @@ export default function blog({ posts }: any) {
                 >
                   <a>
                     <div className="hover:-translate-y-1 duration-200">
-                      <div className="mt-4 shadow-lg border-t-2 p-4 rounded-xl md:w-[400px] md:h-[200px] md:relative">
+                      <div className="mt-4 dark:bg-[#172546] shadow-lg p-4 rounded-xl md:w-[400px] md:h-[200px] md:relative">
                         <h2 className="text-lg font-semibold capitalize">
                           {post.title}
                         </h2>

@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full h-16 flex justify-start items-center px-8 fixed bg-[#fbfcfd] dark:bg-[#0F172A] bg-opacity-80 backdrop-blur-md border-t-2 z-50 -translate-y-1">
+      <nav className="w-full h-16 flex justify-start items-center px-8 fixed bg-[#eff1f3] dark:bg-[#0F172A] bg-opacity-80 backdrop-blur-md border-t-2 z-50 -translate-y-1">
         <div className="w-full flex justify-between max-w-[900px] mx-auto md:px-8">
           <ul className="flex gap-5 text-lg text-gray-500">
             <Link href="/">
