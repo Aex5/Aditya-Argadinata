@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { MdNightlightRound, MdWbSunny } from "react-icons/md";
 
@@ -6,6 +7,7 @@ import { useTheme } from "next-themes";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
+  const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
@@ -23,21 +25,53 @@ export default function Navbar() {
     <>
       <nav className="w-full h-16 flex justify-start items-center px-8 fixed bg-[#eff1f3] dark:bg-[#0F172A] bg-opacity-80 backdrop-blur-md border-t-2 z-50 -translate-y-1">
         <div className="w-full h-10 flex justify-between items-center max-w-[800px] mx-auto md:px-8">
-          <ul className="flex gap-5 text-md font-semibold text-gray-500">
+          <ul className="flex h-7 gap-5 text-md font-semibold text-gray-500">
             <Link href="/">
-              <a>Home</a>
+              <a
+                className={`hover:text-blue-500 ${
+                  router.pathname == "/"
+                    ? "border-b-2 text-blue-500 border-blue-500"
+                    : ""
+                }`}
+              >
+                Home
+              </a>
             </Link>
 
             <Link href="/portfolio">
-              <a>Porfolio</a>
+              <a
+                className={`hover:text-blue-500 ${
+                  router.pathname == "/portfolio"
+                    ? "border-b-2 text-blue-500 border-blue-500"
+                    : ""
+                }`}
+              >
+                Porfolio
+              </a>
             </Link>
 
             <Link href="/blog">
-              <a>Blog</a>
+              <a
+                className={`hover:text-blue-500 ${
+                  router.pathname == "/blog"
+                    ? "border-b-2 text-blue-500 border-blue-500"
+                    : ""
+                }`}
+              >
+                Blog
+              </a>
             </Link>
 
             <Link href="/about">
-              <a>About</a>
+              <a
+                className={`hover:text-blue-500 ${
+                  router.pathname == "/about"
+                    ? "border-b-2 text-blue-500 border-blue-500"
+                    : ""
+                }`}
+              >
+                About
+              </a>
             </Link>
           </ul>
           <button
