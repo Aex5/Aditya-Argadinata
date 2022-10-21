@@ -22,8 +22,8 @@ export default function Navbar() {
   return (
     <>
       <nav className="w-full h-16 flex justify-start items-center px-8 fixed bg-[#eff1f3] dark:bg-[#0F172A] bg-opacity-80 backdrop-blur-md border-t-2 z-50 -translate-y-1">
-        <div className="w-full flex justify-between max-w-[900px] mx-auto md:px-8">
-          <ul className="flex gap-5 text-lg text-gray-500">
+        <div className="w-full h-10 flex justify-between items-center max-w-[900px] mx-auto md:px-8">
+          <ul className="flex gap-5 text-md md:text-lg text-gray-500">
             <Link href="/">
               <a>Home</a>
             </Link>
@@ -42,9 +42,11 @@ export default function Navbar() {
           </ul>
           <button
             onClick={handlerDark}
-            className=" p-2 rounded-xl text-[#0F172A] dark:text-slate-200"
+            className="p-2 rounded-lg text-indigo-500 dark:text-orange-400 bg-[#ced9e2] dark:bg-[#1e2e52]"
           >
-            {isDark ? <MdNightlightRound /> : <MdWbSunny />}
+            <span className="text-lg">
+              {isDark ? <MdNightlightRound /> : <MdWbSunny />}
+            </span>
           </button>
         </div>
       </nav>
