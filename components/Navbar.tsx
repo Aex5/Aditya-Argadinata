@@ -28,9 +28,9 @@ export default function Navbar() {
           <ul className="flex h-7 gap-5 text-md font-semibold text-gray-500">
             <Link href="/">
               <a
-                className={`hover:text-blue-500 ${
+                className={`hover:text-cyan-700 ${
                   router.pathname == "/"
-                    ? "border-b-2 text-blue-500 border-blue-500"
+                    ? "border-b-2 text-cyan-700 border-cyan-700"
                     : ""
                 }`}
               >
@@ -40,9 +40,9 @@ export default function Navbar() {
 
             <Link href="/portfolio">
               <a
-                className={`hover:text-blue-500 ${
+                className={`hover:text-cyan-700 ${
                   router.pathname == "/portfolio"
-                    ? "border-b-2 text-blue-500 border-blue-500"
+                    ? "border-b-2 text-cyan-700 border-cyan-700"
                     : ""
                 }`}
               >
@@ -52,9 +52,9 @@ export default function Navbar() {
 
             <Link href="/blog">
               <a
-                className={`hover:text-blue-500 ${
+                className={`hover:text-cyan-700 ${
                   router.pathname == "/blog"
-                    ? "border-b-2 text-blue-500 border-blue-500"
+                    ? "border-b-2 text-cyan-700 border-cyan-700"
                     : ""
                 }`}
               >
@@ -64,9 +64,9 @@ export default function Navbar() {
 
             <Link href="/about">
               <a
-                className={`hover:text-blue-500 ${
+                className={`hover:text-cyan-700 ${
                   router.pathname == "/about"
-                    ? "border-b-2 text-blue-500 border-blue-500"
+                    ? "border-b-2 text-cyan-700 border-cyan-700"
                     : ""
                 }`}
               >
