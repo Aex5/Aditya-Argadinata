@@ -30,7 +30,7 @@ export default function blog({ posts }: any) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
+          <div className="w-full max-w-[800px] text-gray-500 mx-auto px-8 relative">
             <div className="">
               <div className="flex items-center justify-center gap-10">
                 <div className="flex flex-col gap-2">

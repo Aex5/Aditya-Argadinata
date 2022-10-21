@@ -23,7 +23,7 @@ export default function detail({ detail }: any) {
   return (
     <Layout>
       <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
-        <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
+        <div className="w-full max-w-[800px] text-gray-500 mx-auto px-8 relative">
           {detail.map((blog: any) => {
             return (
               <div key={blog.id}>

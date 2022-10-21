@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] text-gray-500 py-10">
-      <div className="w-full max-w-[900px] mx-auto px-8 ">
+      <div className="w-full max-w-[800px] mx-auto px-8 ">
         <div className="w-full max-w-[900px] border-t-[1px] border-gray-400 pb-8"></div>
         <div className="flex flex-col md:flex-row justify-start gap-3">
           {/* navigation footer */}
@@ -19,6 +19,10 @@ export default function Footer() {
 
               <Link href="/portfolio">
                 <a>Porfolio</a>
+              </Link>
+
+              <Link href="/blog">
+                <a>Blog</a>
               </Link>
             </ul>
           </div>
@@ -68,8 +72,16 @@ export default function Footer() {
         <div className=" text-sm pt-10">
           <p>© 2022 Under MIT Licensed</p>
           <p className="pt-1">
-            Build with <span className="text-pink-700">❤</span> by Aditya
-            Argadinata
+            Build with <span className="text-pink-700">❤</span> by{" "}
+            <span className="underline font-semibold text-cyan-700">
+              <a
+                href="https://github.com/Sujaruu"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Aditya Argadinata
+              </a>
+            </span>
           </p>
         </div>
       </div>

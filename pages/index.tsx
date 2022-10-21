@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
+          <div className="w-full max-w-[800px] text-gray-500 mx-auto px-8 relative">
             <div className="flex flex-col items-center md:flex-row-reverse md:justify-between">
               <div className="w-[200px]">
                 <Image

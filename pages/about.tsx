@@ -11,16 +11,19 @@ export default function about() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
+          <div className="w-full max-w-[800px] text-gray-500 mx-auto px-8 relative">
             <div>
-              <h1 className="text-3xl font-bold mt-8">About</h1>
-              <p className="text-xl font-bold mt-4 text-cyan-600">
-                Aditya Argadinata
+              <h1 className="text-2xl text-center font-bold mt-8">
+                Hi, adit`s here !
+              </h1>
+
+              <p className="mt-4">
+                I am Aditya Argadinata, a bachelor of computer sience student.
               </p>
               <p className="mt-4">
-                hello, I am Aditya Argadinata, A person who love to code and
-                music. Talks about React, Tailwind css, an another web
-                development related topic
+                a little story I am a mechanical engineering graduate but I am
+                more interested in the realm of coding, and I decided to
+                continue studying at one of the universities in Kudus Indonesia
               </p>
             </div>
             {/* skills and tools */}
