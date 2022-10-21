@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 export default function portfolio() {
   return (
     <Layout>
-      <motion.div
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
+      <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8">
             <div>
               <h1 className="text-3xl font-bold mt-8">Portfolio</h1>
@@ -126,8 +126,8 @@ export default function portfolio() {
               </a>
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </Layout>
   );
 }

@@ -24,12 +24,12 @@ function limit(string = "", limit = 40) {
 export default function blog({ posts }: any) {
   return (
     <Layout>
-      <motion.div
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
+      <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
             <div className="">
               <div className="flex items-center justify-center gap-10">
@@ -81,8 +81,8 @@ export default function blog({ posts }: any) {
               ))}
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </Layout>
   );
 }

@@ -15,12 +15,12 @@ const Home: NextPage = () => {
       </Head>
 
       {/* content */}
-      <motion.div
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
+      <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
             <div className="flex flex-col items-center md:flex-row-reverse md:justify-between">
               <div className="w-[200px]">
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
               </div>
               <div className="w-full">
                 <h1 className="text-4xl font-bold mt-8">Aditya Argadinata</h1>
-                <p className="text-xl text-transparent bg-clip-text font-semibold mt-4 bg-gradient-to-l from-[#0c17a8] to-[#4fd8e2]">
+                <p className="text-xl font-bold mt-4 text-cyan-600">
                   Student & Frontend Developer
                 </p>
                 <p className="mt-4">
@@ -106,8 +106,8 @@ const Home: NextPage = () => {
               </Link>
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </Layout>
   );
 };

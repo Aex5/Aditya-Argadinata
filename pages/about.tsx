@@ -5,16 +5,16 @@ import { motion } from "framer-motion";
 export default function about() {
   return (
     <Layout>
-      <motion.div
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
+      <div className="w-full bg-[#eff1f3] dark:bg-[#0F172A] backdrop-blur-sm pt-20">
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="w-full max-w-[900px] text-gray-500 mx-auto px-8 relative">
             <div>
               <h1 className="text-3xl font-bold mt-8">About</h1>
-              <p className="text-2xl text-transparent bg-clip-text font-semibold mt-4 bg-gradient-to-l from-[#0c17a8] to-[#4fd8e2]">
+              <p className="text-xl font-bold mt-4 text-cyan-600">
                 Aditya Argadinata
               </p>
               <p className="mt-4">
@@ -90,8 +90,8 @@ export default function about() {
               </div>
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </Layout>
   );
 }
