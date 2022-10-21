@@ -79,7 +79,7 @@ export default function Navbar() {
             className="p-2 rounded-lg text-indigo-500 dark:text-orange-400 bg-[#ced9e2] dark:bg-[#1e2e52]"
           >
             <span className="text-lg">
-              {isDark ? <MdNightlightRound /> : <MdWbSunny />}
+              {isDark ? <MdWbSunny /> : <MdNightlightRound />}
             </span>
           </button>
         </div>
