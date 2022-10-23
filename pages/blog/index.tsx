@@ -32,7 +32,7 @@ export default function blog({ posts }: any) {
         >
           <div className="w-full max-w-[800px] text-gray-500 mx-auto px-8 relative">
             <div className="">
-              <div className="flex items-center justify-center gap-10">
+              <div className="flex flex-col items-center justify-center gap-10">
                 <div className="flex flex-col gap-2">
                   <Image
                     src="/ginta.jpg"
@@ -46,12 +46,21 @@ export default function blog({ posts }: any) {
                     <span>Github</span>
                   </button>
                 </div>
-                <div>
-                  <h1 className="text-3xl font-bold">Blog</h1>
+
+                <div className="text-center">
                   <p>
                     I will share about web development, design and other relate
                     topics
                   </p>
+
+                  <div className="flex gap-2 items-center justify-center mt-5">
+                    <button className="py-2 px-5 bg-amber-200 dark:bg-amber-600 dark:text-gray-100 text-lg font-semibold rounded-lg">
+                      Javascript
+                    </button>
+                    <button className="py-2 px-5 bg-indigo-200 dark:bg-indigo-600 dark:text-gray-100 text-lg font-semibold rounded-lg">
+                      Design
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -64,7 +73,7 @@ export default function blog({ posts }: any) {
                 >
                   <a>
                     <div className="hover:-translate-y-1 duration-200">
-                      <div className="mt-4 dark:bg-[#172546] shadow-lg p-4 rounded-xl md:w-[350px] md:h-[200px] md:relative">
+                      <div className="mt-4 dark:bg-[#172546] shadow-lg p-4 rounded-xl md:w-[350px] h-[100px] md:h-[200px] md:relative">
                         <h2 className="text-lg font-semibold capitalize">
                           {post.title}
                         </h2>
