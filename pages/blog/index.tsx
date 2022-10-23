@@ -35,7 +35,7 @@ export default function blog({ posts }: any) {
               <div className="flex items-center justify-center gap-10">
                 <div className="flex flex-col gap-2">
                   <Image
-                    src="/megu.jpg"
+                    src="/ginta.jpg"
                     alt=""
                     width="150px"
                     height="150px"
@@ -64,7 +64,7 @@ export default function blog({ posts }: any) {
                 >
                   <a>
                     <div className="hover:-translate-y-1 duration-200">
-                      <div className="mt-4 dark:bg-[#172546] shadow-lg p-4 rounded-xl md:w-[400px] md:h-[200px] md:relative">
+                      <div className="mt-4 dark:bg-[#172546] shadow-lg p-4 rounded-xl md:w-[350px] md:h-[200px] md:relative">
                         <h2 className="text-lg font-semibold capitalize">
                           {post.title}
                         </h2>

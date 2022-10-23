@@ -25,7 +25,7 @@ const Home: NextPage = () => {
             <div className="flex flex-col items-center md:flex-row-reverse md:justify-between">
               <div className="w-[200px]">
                 <Image
-                  src="/saya.jpeg"
+                  src="/adit.jpg"
                   alt=""
                   width="200px"
                   height="200px"
