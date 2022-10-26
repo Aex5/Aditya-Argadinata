@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 .glare{
     background-image: url('../public/glare.png');
     background-repeat: no-repeat;
