@@ -5,7 +5,7 @@ import Layout from "../../../components/Layout";
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-export async function getStaticProps(req: any) {
+export async function getServerSideProps(req: any) {
   const { slug } = req.query;
 
   const detail = await prisma.post.findMany({
