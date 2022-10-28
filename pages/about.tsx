@@ -13,9 +13,7 @@ export default function about() {
         >
           <div className="w-full max-w-[800px] text-gray-500 mx-auto px-8 relative">
             <div>
-              <h1 className="text-2xl text-center font-bold mt-8">
-                Hi, adit`s here !
-              </h1>
+              <h1 className="text-2xl font-bold mt-8">Hi, adit`s here !</h1>
 
               <p className="mt-4">
                 I am Aditya Argadinata, a bachelor of computer sience student.
